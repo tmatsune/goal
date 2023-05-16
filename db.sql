@@ -6,6 +6,8 @@ CREATE TABLE profile(
     username VARCHAR(150),
     email VARCHAR(150),
     PASSWORD TEXT, --TEXT WILL BE HASHED
+    rgb INT[] DEFAULT '{120, 45, 245}',
+    avatar INT DEFAULT 0,
     goalTime INT DEFAULT 0,
     UNIQUE (username,email)
 );
