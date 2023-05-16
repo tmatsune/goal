@@ -107,7 +107,6 @@ func deleteOneDoc(c *gin.Context){
 		c.IndentedJSON(500, gin.H{"msg":"could not get data from user"});
 		fmt.Println(err);
 		return;
-		
 	}
 	var sqlStatement string = "DELETE FROM docsdata WHERE docname = $1 AND user_id = $2;";
 	data, dbErr := database.Goaldb.DB.Exec(sqlStatement, userInput.NwTitle, userInput.NwTitle);
