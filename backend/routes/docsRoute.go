@@ -116,6 +116,7 @@ func deleteOneDoc(c *gin.Context){
 		return;
 	}
 	fmt.Println(data);
+	
 	c.IndentedJSON(200, gin.H{"success":"doc data deleted"})
 }
 
