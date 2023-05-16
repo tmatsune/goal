@@ -23,7 +23,7 @@ func main(){
 		routes.UserRoute(v1.Group("/user"))
 		routes.GoalRoute(v1.Group("/goal"))
 		routes.DocsRoute(v1.Group("/docs"))
-		routes.HabitRoute(v1.Group("/habit"))
+		routes.HabitRoute(v1.Group("/habit"))  
 	}
 	
 	router.GET("/goal", mnRoute);
